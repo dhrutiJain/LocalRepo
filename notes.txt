@@ -7,3 +7,13 @@
 3. git add.
 4. git commit -m "some comment"
 5. create Repo in github
+6. git remote add origin <link>
+7. git remote -v 
+    -to verify remote 
+8. git branch
+    -to check the branch... by default it is master
+9. git branch -M main
+    -to change the name of "master" branch to "main"
+10. git push origin main
+    - (i) git push -u origin main : for setup the "upstream" means we don't need to write everytime "git push origin main" .... we will use only "git push" command only.
+        - (1) git push
