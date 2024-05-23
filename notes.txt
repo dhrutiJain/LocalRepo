@@ -17,3 +17,8 @@
 10. git push origin main
     - (i) git push -u origin main : for setup the "upstream" means we don't need to write everytime "git push origin main" .... we will use only "git push" command only.
         - (1) git push
+
+
+------------------------Work flow-------------------
+Local Git : 
+github Repo -> clone -> changes -> add -> commit -> push
