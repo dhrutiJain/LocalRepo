@@ -1,0 +1,115 @@
+1.Create a Git Repo
+  Add README : Its not mandatory but for information about the project.
+  Select Public/Private : 
+-> Two step process which is (add and commit).
+
+Install GitBash
+commands : 
+ls : all folder
+clear : window clear
+pwd : Working directory
+~ : you are at root directory
+
+
+2. git config --global user.name "Dhruti Jain"
+    -global username set
+    -Git Configure : which means account you use for git
+    - global config means globally git user set up
+
+3. git config --global user.email "jaindhruti45@gmail.com"
+    -global user email set
+
+4. git config --list
+    -means its config list will show
+
+5. git clone <link>
+
+6. git status
+
+*(i) Modify file : Then change anything in your file and check again with "git satus". It will showing modified files are not commited yet.
+  -To modify file there is two step process : 
+    which is (1. add and 2. commit)
+*(ii)Untracked file : Means file is not tracked by git.(Means that file is not in Git)
+*(iii) staged : Means when you have modified file/untracked file which is "add". But not commited and ready for commit.
+*(iv)unmodified : means you have commited the file. there is no change.
+
+7. git add <file name> (git add .)
+    -adds / untracked file from working directory to git staging area.
+    -(git add .) for all the files.
+
+8. git commit -m "some message"
+
+9. git push origin main
+    - for show updated data to git account repo (upload local repo to remote repo)
+    -(main) is a branch.
+
+------------------------------------x For new repo ----------------------------------------------
+1. mkdir <folder Name>
+    -create directory 
+2. ls -a 
+    -check how many files with hidden file
+2. git init
+    -If we have a new project then init used for initialize git
+3. git add.
+4. git commit -m "some comment"
+5. create Repo in github
+6. git remote add origin <link>
+7. git remote -v 
+    -to verify remote 
+8. git branch
+    -to check the branch... by default it is master
+9. git branch -M main
+    -to change the name of "master" branch to "main"
+10. git push origin main
+    - (i) git push -u origin main : for setup the "upstream" means we don't need to write everytime "git push origin main" .... we will use only "git push" command only.
+        - (1) git push
+
+------------------------Work flow Local git-------------------
+Local Git : 
+github Repo -> clone -> changes -> add -> commit -> push
+
+----------------------- Git Branches -------------------------
+1. git branch (To check the branch)
+2. git branch -M <name> (To rename the branch)
+3. git checkout <another branch name> ( checkout from current and switch to the branch)
+4. git checkout -b <new branch name> (checkout from current AND SWITCHED to newly created branch)
+5. git branch -d (Delete the branch - current cannot be deleted. for this action switch to another and delete last one)
+
+-------Work with branch------
+1. git branch
+2. git checkout <another branch name>  ( git checkout -b <new branch name> )
+3. Do changes 
+4. git add .
+5. git commit -m 
+ --set the remote origin for push the code--
+
+-------How to merge---
+*Way 1 : Using commands
+6. git diff <ex.main> (To compare commits,Branches, files & more.)
+7. git merge <ex.name>
+
+*Way 2 : Using github
+Create PR (Pull request)
+
+---After merge ---
+    main changes and feature1 changes merged.
+    then I will checkout from feature1 branch to main. I will not get the changes of feature1.
+    ---The process pull---
+
+---Merge conflicts ---
+git merge main
+
+----Undoing changes--------
+case 1 : staged changes  (means add . )
+    git reset <file name>
+    git reset (for all files)
+
+case 2 : commited changes (for one commit)
+    git reset HEAD~1 (last commit reset)
+    git log ( check commit log history)
+
+case 3 : commited changes (for many commits)
+    git reset <commit hash>
+    git reset --hard<commit hash>
+
+
