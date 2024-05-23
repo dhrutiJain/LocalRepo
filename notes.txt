@@ -1,0 +1,9 @@
+1. mkdir <folder Name>
+    -create directory 
+2. ls -a 
+    -check how many files with hidden file
+2. git init
+    If we have a new project then init used for initialize git
+3. git add.
+4. git commit -m "some comment"
+5. create Repo in github
